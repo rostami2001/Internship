@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /*height: 100vh;*/
+    font-family: 'Arial', sans-serif;
+}
+
+#current-time {
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    /*align-items: center;*/
+    top: 300px;
+    left: 700px;
+}
+
+#clock {
+    color: white;
+    font-size: 30px;
+}
