@@ -1,4 +1,4 @@
-# Internship
+# JavaScript
 July-August 2024
 
 # Description
