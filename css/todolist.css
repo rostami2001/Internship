@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right , #7ed56f ,#28b485 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+#container {
+    padding: 20px 40px;
+    background-color: #7ed56f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+#header {
+    display: inline-block;
+}
+
+#titel {
+    text-align: center;
+    background-color: #7ed56f;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#task {
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    border-color:black;
+    outline: none;
+    min-width: 23vw;
+}
+
+#list-container {
+    flex-grow: 1;
+}
+
+#addbtn {
+    background-color: #50B498;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+
+#lists {
+    list-style: none;
+}
+
+.items {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #DEF9C4;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 27vw;
+    overflow: auto;
+}
+
+.delbtn {
+    background-color: #50B498;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    border: none;
+    margin-left: 10px;
+}
+
+#remove-all-btn {
+    background-color: #50B498;
+    cursor: pointer;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    align-self: center;
+    margin-top: 20px;
+    width: auto;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 60vw;
+        padding: 15px 30px;
+    }
+
+    #task {
+        min-width: 50vw;
+        font-size: 14px;
+    }
+
+    .items {
+        max-width: 55vw;
+    }
+
+    #remove-all-btn {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 90vw;
+        padding: 10px 20px;
+    }
+
+    #task {
+        min-width: 70vw;
+        font-size: 13px;
+    }
+
+    .items {
+        max-width: 80vw;
+    }
+
+    #remove-all-btn {
+        padding: 8px 12px;
+        width: 100%;
+    }
+
+    #titel {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #container {
+        width: 70vw;
+        padding: 15px 25px;
+    }
+
+    #task {
+        min-width: 48vw;
+        font-size: 14px;
+    }
+
+    .items {
+        max-width: 60vw;
+    }
+
+    #remove-all-btn {
+        padding: 10px 15px;
+        width: auto;
+    }
+
+    #titel {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
